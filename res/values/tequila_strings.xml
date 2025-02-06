@@ -4,57 +4,32 @@
 
     <!-- Fragments -->
     <string name="tequila_settings_statusbar">Statusbar</string>
-    <string name="tequila_settings_statusbar_summary">Statusbar icons customization</string>
+    <string name="tequila_settings_statusbar_summary">Statusbar customization</string>
     <string name="tequila_settings_lockscreen">Lockscreen</string>
-    <string name="tequila_settings_lockscreen_summary">double tap to sleep, etc</string>
+    <string name="tequila_settings_lockscreen_summary">Soon!!</string>
     <string name="tequila_settings_btn">Buttons</string>
     <string name="tequila_settings_btn_summary">customize button actions</string>
     <string name="tequila_settings_notifications">Notifications</string>
     <string name="tequila_settings_notifications_summary">Customize notifications</string>
     <string name="tequila_settings_misc">Miscellaneous</string>
-    <string name="tequila_settings_misc_summary">Other settings</string>
+    <string name="tequila_settings_misc_summary">Soon!!</string>
     <string name="tequila_settings_quick_settings">Quick settings</string>
     <string name="tequila_settings_quick_settings_summary">Customize QS-related settings</string>
-    <string name="website_title">Website</string>
-    <string name="website_summary">Download portal</string>
-    <string name="telegram_channel">Telegram channel</string>
-    <string name="telegram_channel_summary">News, updates and open group chat</string>
-    <string name="donate_title">Donations</string>
-    <string name="donate_summary">Helps us keep our infrastructure up</string>
     <string name="github_title">GitHub</string>
-    <string name="github_summary">tequilaExtended source code</string>
+    <string name="github_summary">tequila Extended source code</string>
     <string name="about_links">Links</string>
     <string name="about_members">Members</string>
 
     <string name="tequila_settings_about_entry">What is tequila Extended?</string>
     <string name="tequila_settings_aboutus">¿Qué es el tequila Extended?</string>
-    <string name="tequila_settings_aboutus_entry">Tap here to learn about tequila Extended and our team.</string>
+    <string name="tequila_settings_aboutus_entry">Tap here to learn about tequila Extended and Me.</string>
     <string name="tequila_settings_aboutus_summary">tequila Extended is a fork of tequilaOS. We focus on stability and battery backup but still allow users to customize the system to their own needs.</string>
-
-    <!-- System UI Tuner -->
-    <string name="system_ui_tuner">Icons</string>
-    <string name="system_ui_tuner_summary">Show and hide various icons</string>
-
-    <!-- Double tap status bar to sleep -->
-    <string name="double_tap_to_sleep_title">Double tap to sleep</string>
-    <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
-
-    <!-- Double tap lockscreen to sleep -->
-    <string name="double_tap_to_sleep_lockscreen_title">Double tap to sleep</string>
-    <string name="double_tap_to_sleep_lockscreen_summary">Double tap lockscreen to put the device to sleep</string>
 
     <!-- Volume button music control -->
     <string name="volume_button_music_control_title">Playback control</string>
     <string name="volume_button_music_control_summary">When the screen is off, long-pressing volume keys will skip music tracks</string>
     <string name="gesture_playback_control_delay">delay</string>
 
-    <!-- Ignore secure window -->
-    <string name="ignore_window_secure_title">Ignore window secure flags</string>
-    <string name="ignore_window_secure_summary">This removes screenshot and screenrecord limits for all applications but may lead to privacy leaks. After toggling, you may need to restart your apps.</string>
-
-    <!-- Global Actions -->
-    <string name="global_actions_advanced_reboot_title">Advanced restart</string>
-    <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader in power menu</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Brightness slider</string>
@@ -84,21 +59,8 @@
     <string name="show_fourg_icon_title">4G icon</string>
     <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
 
-    <!-- QS footer data usage -->
-    <string name="qs_footer_category">QS Footer</string>
-    <string name="qs_show_data_usage_title">Show data usage</string>
-    <string name="qs_show_data_usage_summary">Show daily cellular/Wi-Fi data usage in QS footer</string>
-
-    <!-- Fingerprint Ripple Effect -->
-    <string name="enable_fingerprint_ripple_effect_title">Ripple effect</string>
-    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
-
     <!-- Data disabled icon -->
     <string name="data_disabled_icon_title">Show data disabled icon</string>
     <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
-
-    <string name="battery_style_port">Portrait</string>
-    <string name="battery_style_circle">Circle</string>
-    <string name="battery_style_text">Text</string>
     
 </resources>
