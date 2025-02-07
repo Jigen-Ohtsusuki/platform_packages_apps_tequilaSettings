@@ -27,6 +27,9 @@
             android:title="Jigen-Ohtsusuki"
             android:summary="Lead developer"
             android:icon="@drawable/ic_person">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/Jigen-Ohtsusuki"/>
     </Preference>
 
     <Preference
@@ -34,6 +37,9 @@
             android:title="TequilaOS Team"              
             android:summary="Original Source"
             android:icon="@drawable/ic_person">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/tequilaOS"/>
     </Preference>
 
 </PreferenceScreen>
