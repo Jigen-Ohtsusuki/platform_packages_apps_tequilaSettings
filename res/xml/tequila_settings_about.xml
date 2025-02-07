@@ -19,6 +19,17 @@
                 android:data="https://github.com/Tequila-Extended"/>
     </Preference>
 
+    
+    <Preference
+            android:key="gitlab"
+            android:title="@string/gitlab_title"
+            android:summary="@string/gitlab_summary"
+            android:icon="@drawable/ic_gitlab">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://gitlab.com/Tequila-Extended"/>
+    </Preference>
+
     <PreferenceCategory
         android:title="@string/about_members"/>
 
