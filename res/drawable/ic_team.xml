@@ -3,7 +3,8 @@
     android:viewportWidth="48"
     android:viewportHeight="48"
     android:width="24dp"
-    android:height="24dp">
+    android:height="24dp"
+    android:tint="?android:attr/colorControlNormal">
     
     <group android:translateX="0" android:translateY="48">
         <path
