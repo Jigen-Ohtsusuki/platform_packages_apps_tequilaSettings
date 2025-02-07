@@ -36,7 +36,7 @@
             android:key="Source"
             android:title="TequilaOS Team"              
             android:summary="Original Source"
-            android:icon="@drawable/ic_person">
+            android:icon="@drawable/ic_team">
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="https://github.com/tequilaOS"/>
