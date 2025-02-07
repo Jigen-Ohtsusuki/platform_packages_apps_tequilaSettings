@@ -20,9 +20,10 @@ public class AboutTeam extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.tequila_settings_about);
 
         findPreference("about_rom").setLayoutResource(R.layout.about_tequila);
-        findPreference("github").setLayoutResource(R.layout.top_level_preference_middle);
+        findPreference("github").setLayoutResource(R.layout.top_level_preference_top);
+        findPreference("gitlab").setLayoutResource(R.layout.top_level_preference_bottom);
         findPreference("Main").setLayoutResource(R.layout.top_level_preference_top);
-        findPreference("Source").setLayoutResource(R.layout.top_level_preference_middle);
+        findPreference("Source").setLayoutResource(R.layout.top_level_preference_bottom);
 
     }
 
