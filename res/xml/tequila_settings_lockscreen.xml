@@ -5,7 +5,6 @@
 
     <Preference
             android:key="depth_wallpaper"
-            android:icon="@drawable/ic_ui_styles"
             android:title="@string/dw_wallpaper_enabled_title"
             android:summary="@string/dw_wallpaper_enabled_summary"
             android:fragment="com.crdroid.settings.fragments.WallpaperDepth" />
