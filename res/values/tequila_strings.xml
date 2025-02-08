@@ -85,4 +85,9 @@
     <string name="gameprops_load_json_title">Select Per-app Props JSON File</string>
     <string name="gameprops_load_json_summary">Pick Per-app JSON file to be used for spoofing games</string>
 
+    
+    <!-- Circle to search -->
+    <string name="search_all_entrypoints_enabled_title">Circle to Search</string>
+    <string name="search_all_entrypoints_enabled_summary">Use CTS instead of Google Lens for navbar long press</string>
+
 </resources>
