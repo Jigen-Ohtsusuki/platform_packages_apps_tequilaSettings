@@ -16,7 +16,9 @@
     <string name="tequila_settings_quick_settings">Quick settings</string>
     <string name="tequila_settings_quick_settings_summary">Customize QS-related settings</string>
     <string name="github_title">GitHub</string>
-    <string name="github_summary">tequila Extended source code</string>
+    <string name="github_summary">tequila Extended source code...</string>
+    <string name="github_title">GitLab</string>
+    <string name="github_summary">tequila Extended source code...</string>
     <string name="about_links">Links</string>
     <string name="about_members">Members</string>
 
