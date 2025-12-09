@@ -3,6 +3,11 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/tequila_settings_misc" >
 
+        <Preference
+         android:key="pif_json_file_preference"
+         android:title="@string/pif_spoofing_title"
+         android:summary="@string/pif_spoofing_summary"/>
+
     <com.tequila.settings.fragments.misc.KeyboxDataPreference
         android:key="keybox_data_setting"
         android:title="@string/keybox_data_title"
