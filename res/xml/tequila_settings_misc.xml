@@ -3,10 +3,22 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/tequila_settings_misc" >
 
-        <Preference
-         android:key="pif_json_file_preference"
-         android:title="@string/pif_spoofing_title"
-         android:summary="@string/pif_spoofing_summary"/>
+    <Preference
+        android:key="pif_json_file_preference"
+        android:title="@string/pif_spoofing_title"
+        android:summary="@string/pif_spoofing_summary"/>
+
+    
+    <com.tequila.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.gameprops.enabled"
+        android:title="@string/gameprops_title"
+        android:summary="@string/gameprops_summary"
+        android:defaultValue="false" />
+
+   <Preferencee
+        android:key="game_props_json_file_preference"
+        android:title="@string/gameprops_load_json_title"
+        android:summary="@string/gameprops_load_json_summary" />
 
     <com.tequila.settings.fragments.misc.KeyboxDataPreference
         android:key="keybox_data_setting"
@@ -14,7 +26,7 @@
         android:summary="@string/keybox_data_summary"
         android:defaultValue=""/>
 
-        <Preference
+    <Preference
         android:key="hide_developer_status_settings"
         android:title="@string/hide_developer_status_title"
         android:summary="@string/hide_developer_status_summary"
