@@ -85,4 +85,9 @@
     <string name="gameprops_load_json_title">Select Per-app Props JSON File</string>
     <string name="gameprops_load_json_summary">Pick Per-app JSON file to be used for spoofing games</string>
 
+    <!-- display PIF properties -->
+    <string name="show_pif_properties_title">Play Integrity Fix properties</string>
+    <string name="show_pif_properties_summary">Show all currently set PIF properties</string>
+    <string name="error_loading_properties">Error loading PIF properties</string>
+
 </resources>
