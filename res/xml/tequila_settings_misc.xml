@@ -8,12 +8,6 @@
         android:title="@string/pif_spoofing_title"
         android:summary="@string/pif_spoofing_summary"/>
 
-    <!-- displaying current PIF properties -->
-    <Preference
-         android:key="show_pif_properties"
-         android:title="@string/show_pif_properties_title"
-         android:summary="@string/show_pif_properties_summary"
-         android:dependency="persist.sys.pixelprops.all"/>
     
     <com.tequila.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.gameprops.enabled"
