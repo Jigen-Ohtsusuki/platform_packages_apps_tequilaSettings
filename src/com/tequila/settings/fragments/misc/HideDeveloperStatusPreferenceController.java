@@ -23,7 +23,7 @@ import android.os.UserManager;
 
 import com.android.settings.core.BasePreferenceController;
 
-import com.android.internal.util.crdroid.HideDeveloperStatusUtils;
+import com.android.internal.util.tequila.HideDeveloperStatusUtils;
 
 import java.util.List;
 

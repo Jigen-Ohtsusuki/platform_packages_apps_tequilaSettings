@@ -29,6 +29,8 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Iterator;
 
+import com.android.internal.util.tequila.SystemRestartUtils;
+
 public class MiscSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 

@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.crdroid.settings.fragments.misc
+package com.tequila.settings.fragments.misc
 
 import android.annotation.SuppressLint
 import android.app.ActivityManager
@@ -44,7 +44,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
-import com.android.internal.util.crdroid.HideDeveloperStatusUtils
+import com.android.internal.util.tequila.HideDeveloperStatusUtils
 
 import com.android.settings.R
 
