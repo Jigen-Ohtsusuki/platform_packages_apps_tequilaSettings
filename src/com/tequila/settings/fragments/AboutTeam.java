@@ -18,12 +18,18 @@ public class AboutTeam extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.tequila_settings_about);
+        Preference aboutRom = findPreference("about_rom");
+        if (aboutRom != null) {
+            aboutRom.setLayoutResource(R.layout.superioros_dashboard_preference_tequila);
+            aboutRom.setTitle(R.string.tequila_settings_aboutus);
+            aboutRom.setSummary(R.string.tequila_settings_aboutus_summary);
+            aboutRom.setIcon(R.drawable.ic_tequila_settings);
+        }
 
-        findPreference("about_rom").setLayoutResource(R.layout.about_tequila);
-        findPreference("github").setLayoutResource(R.layout.top_level_preference_top);
-        findPreference("gitlab").setLayoutResource(R.layout.top_level_preference_bottom);
-        findPreference("Main").setLayoutResource(R.layout.top_level_preference_top);
-        findPreference("Source").setLayoutResource(R.layout.top_level_preference_bottom);
+        findPreference("github").setLayoutResource(R.layout.superioros_dashboard_preference_top);
+        findPreference("gitlab").setLayoutResource(R.layout.superioros_dashboard_preference_bottom);
+        findPreference("Main").setLayoutResource(R.layout.superioros_dashboard_preference_top);
+        findPreference("Source").setLayoutResource(R.layout.superioros_dashboard_preference_bottom);
 
     }
 

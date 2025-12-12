@@ -25,7 +25,7 @@
     <string name="tequila_settings_about_entry">What is tequila Extended?</string>
     <string name="tequila_settings_aboutus">¿Qué es el tequila Extended?</string>
     <string name="tequila_settings_aboutus_entry">Tap here to learn about tequila Extended and Me.</string>
-    <string name="tequila_settings_aboutus_summary">tequila Extended is a fork of tequilaOS. We focus on stability and battery backup but still allow users to customize the system to their own needs.</string>
+    <string name="tequila_settings_aboutus_summary">tequila Extended is a fork of tequilaOS. We focus on stability but still allow users to customize the system to their own needs.</string>
 
     <!-- Volume button music control -->
     <string name="volume_button_music_control_title">Playback control</string>
