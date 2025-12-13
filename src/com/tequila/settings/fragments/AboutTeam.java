@@ -4,12 +4,13 @@ import android.os.Bundle;
 
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-
+import com.tequila.settings.preferences.ExpandableAboutPreference;
 
 public class AboutTeam extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
@@ -18,19 +19,45 @@ public class AboutTeam extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.tequila_settings_about);
-        Preference aboutRom = findPreference("about_rom");
-        if (aboutRom != null) {
-            aboutRom.setLayoutResource(R.layout.superioros_dashboard_preference_tequila);
+        
+        // Replace the default preference with our custom expandable preference
+        PreferenceScreen screen = getPreferenceScreen();
+        Preference oldPref = findPreference("about_rom");
+        
+        if (oldPref != null) {
+            // Create new expandable preference
+            ExpandableAboutPreference aboutRom = new ExpandableAboutPreference(getContext());
+            aboutRom.setKey("about_rom");
             aboutRom.setTitle(R.string.tequila_settings_aboutus);
             aboutRom.setSummary(R.string.tequila_settings_aboutus_summary);
             aboutRom.setIcon(R.drawable.ic_tequila_settings);
+            aboutRom.setOrder(oldPref.getOrder());
+            
+            // Remove old preference and add new one
+            screen.removePreference(oldPref);
+            screen.addPreference(aboutRom);
         }
 
-        findPreference("github").setLayoutResource(R.layout.superioros_dashboard_preference_top);
-        findPreference("gitlab").setLayoutResource(R.layout.superioros_dashboard_preference_bottom);
-        findPreference("Main").setLayoutResource(R.layout.superioros_dashboard_preference_top);
-        findPreference("Source").setLayoutResource(R.layout.superioros_dashboard_preference_bottom);
-
+        // Set layouts for other preferences
+        Preference github = findPreference("github");
+        if (github != null) {
+            github.setLayoutResource(R.layout.superioros_dashboard_preference_top);
+        }
+        
+        Preference gitlab = findPreference("gitlab");
+        if (gitlab != null) {
+            gitlab.setLayoutResource(R.layout.superioros_dashboard_preference_bottom);
+        }
+        
+        Preference main = findPreference("Main");
+        if (main != null) {
+            main.setLayoutResource(R.layout.superioros_dashboard_preference_top);
+        }
+        
+        Preference source = findPreference("Source");
+        if (source != null) {
+            source.setLayoutResource(R.layout.superioros_dashboard_preference_bottom);
+        }
     }
 
     @Override
