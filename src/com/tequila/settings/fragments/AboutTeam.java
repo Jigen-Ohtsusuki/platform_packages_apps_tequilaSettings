@@ -30,7 +30,6 @@ public class AboutTeam extends SettingsPreferenceFragment implements
             aboutRom.setKey("about_rom");
             aboutRom.setTitle(R.string.tequila_settings_aboutus);
             aboutRom.setSummary(R.string.tequila_settings_aboutus_summary);
-            aboutRom.setIcon(R.drawable.ic_tequila_settings);
             aboutRom.setOrder(oldPref.getOrder());
             
             // Remove old preference and add new one
@@ -67,6 +66,6 @@ public class AboutTeam extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.TEQUILA;
+        return MetricsProto.MetricsEvent.AOSPA;
     }
 }

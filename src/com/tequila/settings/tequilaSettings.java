@@ -21,7 +21,6 @@ public class tequilaSettings extends SettingsPreferenceFragment {
             aboutFragment.setLayoutResource(R.layout.superioros_dashboard_preference_tequila);
             aboutFragment.setTitle(R.string.tequila_settings_about_entry);
             aboutFragment.setSummary(R.string.tequila_settings_aboutus_entry);
-            aboutFragment.setIcon(R.drawable.ic_tequila_settings);
         }
 
         findPreference("statusbar_fragment").setLayoutResource(R.layout.superioros_dashboard_preference_top);
@@ -34,7 +33,7 @@ public class tequilaSettings extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.TEQUILA;
+        return MetricsProto.MetricsEvent.AOSPA;
     }
 
 }

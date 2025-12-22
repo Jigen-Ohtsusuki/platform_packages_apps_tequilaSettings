@@ -1,7 +1,6 @@
 package com.tequila.settings.fragments;
 
 import android.content.ContentResolver;
-
 import android.os.Bundle;
 
 import androidx.preference.Preference;
@@ -12,7 +11,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
 
 import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.util.tequila.TequilaUtils;
+import com.android.internal.util.aospa.AOSPAUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -31,8 +30,11 @@ public class NotificationsSettings extends SettingsPreferenceFragment implements
         final PreferenceScreen prefSet = getPreferenceScreen();
 
         PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
-        if (!TequilaUtils.isVoiceCapable(getActivity())) {
+        
+        if (!AOSPAUtils.isVoiceCapable(getActivity())) {
+            if (incallVibCategory != null) {
                 prefSet.removePreference(incallVibCategory);
+            }
         }
     }
 
@@ -43,6 +45,6 @@ public class NotificationsSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.TEQUILA;
+        return MetricsProto.MetricsEvent.AOSPA;
     }
 }

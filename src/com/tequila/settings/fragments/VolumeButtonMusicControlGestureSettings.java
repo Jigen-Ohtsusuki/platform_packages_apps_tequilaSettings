@@ -27,6 +27,6 @@ public class VolumeButtonMusicControlGestureSettings extends SettingsPreferenceF
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.TEQUILA;
+        return MetricsProto.MetricsEvent.AOSPA;
     }
 }

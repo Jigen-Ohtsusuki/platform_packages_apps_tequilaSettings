@@ -27,6 +27,6 @@ public class QuickSettingsSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.TEQUILA;
+        return MetricsProto.MetricsEvent.AOSPA;
     }
 }

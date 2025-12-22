@@ -15,7 +15,7 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 
 import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.util.tequila.SystemRestartUtils;
+import com.android.internal.util.aospa.SystemRestartUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.tequila.settings.fragments.misc.KeyboxDataPreference;
@@ -28,7 +28,7 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Iterator;
 
-import com.android.internal.util.tequila.SystemRestartUtils;
+import com.android.internal.util.aospa.SystemRestartUtils;
 
 public class MiscSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
@@ -85,7 +85,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.TEQUILA;
+        return MetricsProto.MetricsEvent.AOSPA;
     }
 
     @Override

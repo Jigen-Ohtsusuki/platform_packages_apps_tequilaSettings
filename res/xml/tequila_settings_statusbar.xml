@@ -2,17 +2,4 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/tequila_settings_statusbar" >
-
-    <com.tequila.support.preferences.SystemSettingSwitchPreference
-            android:key="show_fourg_icon"
-            android:title="@string/show_fourg_icon_title"
-            android:summary="@string/show_fourg_icon_summary"
-            android:defaultValue="false"/>
-
-    <com.tequila.support.preferences.SystemSettingSwitchPreference
-        android:key="data_disabled_icon"
-        android:title="@string/data_disabled_icon_title"
-        android:summary="@string/data_disabled_icon_summary"
-        android:defaultValue="false"/>
-
 </PreferenceScreen>
